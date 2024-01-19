@@ -1,4 +1,4 @@
-package org.example;
+package com.fastcampuspay.membership.adapter.in.web.out;
 
 
 import lombok.RequiredArgsConstructor;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class TestController {
+public class RegisterMembershipController {
     @GetMapping(path = "/test")
     void test(){
         System.out.println("Hello world!!");
