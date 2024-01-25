@@ -31,7 +31,7 @@ public class Membership {
             MembershipCorp membershipCorp) {
         return new Membership(
                 membershipId.membershipId,
-                membershipName.membershipName,
+                membershipName.nameValue,
                 membershipEmail.emailValue,
                 membershipAddress.addressValue,
                 membershipIsValid.isValidValue,
@@ -51,10 +51,10 @@ public class Membership {
     @Value
     public static class MembershipName {
         public MembershipName(String value) {
-            this.membershipName = value;
+            this.nameValue= value;
         }
 
-        String membershipName;
+        String nameValue;
     }
 
     @Value
