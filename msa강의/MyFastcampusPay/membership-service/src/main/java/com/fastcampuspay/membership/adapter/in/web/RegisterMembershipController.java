@@ -1,4 +1,4 @@
-package com.fastcampuspay.membership.adapter.in.web.out;
+package com.fastcampuspay.membership.adapter.in.web;
 
 
 import com.fastcampuspay.membership.application.port.in.RegisterMembershipCommand;

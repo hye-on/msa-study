@@ -28,14 +28,14 @@ public class Membership {
 
     public static Membership generateMember(
             MembershipId membershipId, MembershipName membershipName, MembershipEmail membershipEmail, MembershipAddress membershipAddress, MembershipIsValid membershipIsValid,
-            MembershipCorp membershipCorp) {
+            MembershipIsCorp membershipIsCorp) {
         return new Membership(
                 membershipId.membershipId,
                 membershipName.nameValue,
                 membershipEmail.emailValue,
                 membershipAddress.addressValue,
                 membershipIsValid.isValidValue,
-                membershipCorp.isCorpValue
+                membershipIsCorp.isCorpValue
         );
     }
 
@@ -85,8 +85,8 @@ public class Membership {
     }
 
     @Value
-    public static class MembershipCorp {
-        public MembershipCorp(boolean value) {
+    public static class MembershipIsCorp {
+        public MembershipIsCorp(boolean value) {
             this.isCorpValue = value;
         }
 

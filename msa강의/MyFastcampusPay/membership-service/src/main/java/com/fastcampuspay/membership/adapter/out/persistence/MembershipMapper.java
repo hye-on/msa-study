@@ -12,7 +12,7 @@ public class MembershipMapper {
                 new Membership.MembershipEmail(membershipJpaEntity.getEmail()),
                 new Membership.MembershipAddress(membershipJpaEntity.getAddress()),
                 new Membership.MembershipIsValid(membershipJpaEntity.isValid()),
-                new Membership.MembershipCorp(membershipJpaEntity.isCorp())
+                new Membership.MembershipIsCorp(membershipJpaEntity.isCorp())
         );
     }
 }

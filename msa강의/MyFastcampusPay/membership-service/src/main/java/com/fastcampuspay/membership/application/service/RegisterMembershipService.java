@@ -31,7 +31,7 @@ public class RegisterMembershipService implements RegisterMembershipUseCase {
                 new Membership.MembershipEmail(command.getEmail()),
                 new Membership.MembershipAddress(command.getAddress()),
                 new Membership.MembershipIsValid(command.isValid()),
-                new Membership.MembershipCorp(command.isCorp())
+                new Membership.MembershipIsCorp(command.isCorp())
         );
         //entity -> Membership
         return membershipMapper.mapToDomainEntity(jpaEntity);
